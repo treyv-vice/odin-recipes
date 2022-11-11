@@ -1,14 +1,21 @@
 /* styles.css */
-
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
 body {
     font-family: Helvetica, Arial, sans-serif;
 }
 
-h1 {
+h1.body-section {
     background-color: bisque;
     text-align: center;
     font-size: 36px;
-    border-radius: 20px;
     padding: 10px 0px;
 }
 
@@ -21,8 +28,7 @@ ul > li {
     width: auto;
     border-radius: 20px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     padding: 10px;
 }
 
@@ -37,7 +43,10 @@ ul > li {
 
 .body-section {
     border-radius: 20px;
+    border: 2px solid black;
     padding: 5px 20px;
+    margin: 10px auto;
+    width: 80%;
 }
 
 .description {
